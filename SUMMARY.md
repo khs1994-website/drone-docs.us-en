@@ -896,6 +896,7 @@
     * [DRONE CRON INTERVAL](server/reference/drone-cron-interval.md)
     * [DRONE DATABASE DATASOURCE](server/reference/drone-database-datasource.md)
     * [DRONE DATABASE DRIVER](server/reference/drone-database-driver.md)
+    * [DRONE DATABASE MAX CONNECTIONS](server/reference/drone-database-max-connections.md)
     * [DRONE DATABASE SECRET](server/reference/drone-database-secret.md)
     * [DRONE GIT ALWAYS AUTH](server/reference/drone-git-always-auth.md)
     * [DRONE GIT PASSWORD](server/reference/drone-git-password.md)
