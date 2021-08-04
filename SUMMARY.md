@@ -58,6 +58,9 @@
     * [Users Update](api/users/users_update.md)
   * [API](api/_index.md)
   * [Overview](api/overview.md)
+- Articles
+  * [Articles](articles/_index.md)
+  * [Common Docker Problems](articles/common-docker-problems.md)
 - Autoscaler
   * [Autoscaler](autoscaler/_index.md)
   * [Overview](autoscaler/overview.md)
@@ -698,6 +701,7 @@
       * [Dashboard](runner/kubernetes/configuration/dashboard.md)
       * [Logging](runner/kubernetes/configuration/logging.md)
       * [Policies](runner/kubernetes/configuration/policies.md)
+      * [Resources](runner/kubernetes/configuration/resources.md)
     * [Kubernetes](runner/kubernetes/_index.md)
     * [Installation](runner/kubernetes/installation.md)
     * [Overview](runner/kubernetes/overview.md)
