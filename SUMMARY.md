@@ -1010,6 +1010,7 @@
   * [Jsonnet](template/jsonnet.md)
   * [Starklark](template/starlark.md)
   * [Variables](template/variables.md)
+  * [Yaml](template/yaml.md)
 - Webhooks
   * [Webhooks](webhooks/_index.md)
   * [Example Payloads](webhooks/examples.md)
