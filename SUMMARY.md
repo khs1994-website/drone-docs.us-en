@@ -962,6 +962,7 @@
     * [DRONE SERVER PROXY HOST](server/reference/drone-server-proxy-host.md)
     * [DRONE SERVER PROXY PROTO](server/reference/drone-server-proxy-proto.md)
     * [DRONE STARLARK ENABLED](server/reference/drone-starlark-enabled.md)
+    * [DRONE STARLARK STEP LIMIT](server/reference/drone-starlark-step-limit.md)
     * [DRONE STASH CONSUMER KEY](server/reference/drone-stash-consumer-key.md)
     * [DRONE STASH CONSUMER SECRET](server/reference/drone-stash-consumer-secret.md)
     * [DRONE STASH DEBUG](server/reference/drone-stash-debug.md)
