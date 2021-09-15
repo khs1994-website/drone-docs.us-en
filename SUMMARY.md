@@ -622,6 +622,7 @@
         * [DRONE RUNNER NAME](runner/exec/configuration/reference/drone-runner-name.md)
         * [DRONE RUNNER PATH](runner/exec/configuration/reference/drone-runner-path.md)
         * [DRONE RUNNER ROOT](runner/exec/configuration/reference/drone-runner-root.md)
+        * [DRONE RUNNER SYMLINKS](runner/exec/configuration/reference/drone-runner-symlinks.md)
         * [DRONE SECRET PLUGIN ENDPOINT](runner/exec/configuration/reference/drone-secret-plugin-endpoint.md)
         * [DRONE SECRET PLUGIN SKIP VERIFY](runner/exec/configuration/reference/drone-secret-plugin-skip-verify.md)
         * [DRONE SECRET PLUGIN TOKEN](runner/exec/configuration/reference/drone-secret-plugin-token.md)
