@@ -39,10 +39,10 @@ The Enterprise Edition is free for organizations with under $1 million US dollar
 You can download the Enterprise Edition from Dockerhub by following the [installation instructions]({{< relref "server/overview.md" >}}) described in this documentation.
 
 # Where do I download the Open Source Edition?
-There is no official distribution of the Open Source Edition. You can [build](https://github.com/drone/drone/blob/master/BUILDING_OSS) the Open Source Edition from source using the oss build tags. 
+There is no official distribution of the Open Source Edition. You can [build](https://github.com/harness/drone/blob/master/BUILDING_OSS) the Open Source Edition from source using the oss build tags. 
 
 ```
-$ go build -tags "oss nolimit" github.com/drone/drone/cmd/drone-server
+$ go build -tags "oss nolimit" github.com/harness/drone/cmd/drone-server
 ```
 
 # How do I use the Enterprise Edition for Free?

@@ -26,6 +26,26 @@ Drone integrates seamlessly with popular _Source Control Management_ providers. 
 {{< link "/server/provider/gitea" >}}
 {{< link "/server/provider/bitbucket-cloud" >}}
 {{< link "/server/provider/bitbucket-server" >}}
+{{< link "/server/provider/gitee" >}}
+
+# Server Upgrades
+
+Drone server upgrades are meant to be simple and safe. Replace the old Docker image with the new Docker image and Drone will handle everything else (automatic database migrations, etc).
+
+_If a release introduces breaking changes or requires manual upgrade it will be specified in the release notes. As a general rule we try to maintain strict backward compatibility and avoid breaking changes, even in major releases._
+
+```sh {linenos=table}
+# terminate the drone server
+docker stop drone
+docker rm drone
+
+# pull the latest major release
+docker pull drone/drone:2
+
+# re-start the drone server using the
+# newer docker image
+docker run ... 
+```
 
 # Runner Installation
 
