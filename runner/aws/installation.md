@@ -15,17 +15,15 @@ The AWS runner is in the Release Candidate phase.
 
 This article explains how to install the AWS runner on Linux. The AWS runner is packaged as a minimal Docker image distributed on [DockerHub](https://hub.docker.com/r/drone/drone-runner-aws).
 
-## Download
+# Download
 
 Install Docker and pull the public image:
 
-```bash
+```
 docker pull drone/drone-runner-aws
 ```
 
-NB It is recommended to use a tagged version of the image.
-
-## Drone specific Configuration
+# Configuration
 
 The AWS runner is configured using environment variables. This article references the below configuration options. See [Configuration]({{< relref "configuration/reference" >}}) for a complete list of configuration options.
 
@@ -36,9 +34,9 @@ The AWS runner is configured using environment variables. This article reference
 - __DRONE_RPC_SECRET__
   : provides the shared secret used to authenticate with your Drone server. This must match the secret defined in your Drone server configuration.
 
-## AWS specific Configuration
+# AWS specific Configuration
 
-### AWS EC2 prerequisites
+## AWS EC2 prerequisites
 
 There are some pieces of setup that need to be performed on the AWS side first.
 
@@ -53,7 +51,7 @@ There are some pieces of setup that need to be performed on the AWS side first.
 
   This will allow you to remotely connect to the build instances. Once you set `DRONE_SETTINGS_AWS_KEY_PAIR_NAME`.
 
-### AWS EC2 environment variables
+## AWS EC2 environment variables
 
 Set up the runner by using either an environment variables or a `.env` file similar to other Drone runners. Below is a list of the AWS specific environment variables.
 
@@ -63,7 +61,7 @@ Set up the runner by using either an environment variables or a `.env` file simi
   : AWS access key secret, obtained above.
 - __DRONE_SETTINGS_AWS_REGION__
   : AWS region
-  __DRONE_SETTINGS_AWS_AVAILABILITY_ZONE__
+- __DRONE_SETTINGS_AWS_AVAILABILITY_ZONE__
   : Specify the availability zone for the build instance.
 - __DRONE_SETTINGS_AWS_KEY_PAIR_NAME__
   : The name of the key pair to use for the build instances. This is optional and used for debugging purposes.
@@ -72,9 +70,9 @@ Set up the runner by using either an environment variables or a `.env` file simi
 - __DRONE_SETTINGS_LITE_ENGINE_PATH__
   : The web URL for the path containing lite-engine binaries. This can be hosted internally or you can get the binaries from github.
 
-### Example AWS Runner configuration `.env` file
+## Example AWS Runner configuration `.env` file
 
-```bash
+{{< highlight bash "linenos=table" >}}
 DRONE_RPC_HOST=localhost:8080
 DRONE_RPC_PROTO=http
 DRONE_RPC_SECRET=bea26a2221fd8090ea38720fc445eca6
@@ -82,13 +80,13 @@ DRONE_SETTINGS_AWS_ACCESS_KEY_ID=XXXXXX
 DRONE_SETTINGS_AWS_ACCESS_KEY_SECRET=XXXXX
 DRONE_SETTINGS_AWS_REGION=us-east-2
 DRONE_SETTINGS_LITE_ENGINE_PATH=https://github.com/harness/lite-engine/releases/download/v0.0.1.12/
-```
+{{< / highlight >}}
 
-## Pool File
+# Pool File
 
 The AWS runner requires a pool file, this describes the number and type of AWS instances to create in a hot swappable pool. For example:
 
-{{< highlight yaml "linenos=table,hl_lines=5-7" >}}
+{{< highlight yaml "linenos=table" >}}
 name: common
 min_pool_size: 1
 
@@ -96,7 +94,6 @@ account:
   region: us-east-2
 
 instance:
-# ubuntu 18.04 ohio
   ami: ami-051197ce9cbb023ea
   type: t2.nano
   network:
@@ -106,11 +103,11 @@ instance:
 
 See [Pool file]({{< relref "configuration/pool.md" >}}) for more detailed information.
 
-## Installation
+# Installation
 
 We can use a config folder that contains the necessary configuration files.
 
-```bash
+```
 ls  /path/on/host/config/
 .drone_pool.yml
 .env
@@ -118,7 +115,7 @@ ls  /path/on/host/config/
 
 The below command creates a container and starts the runner.
 
-```bash
+```
 docker run -d \
   --volume=/path/on/host/config:/config/ \
   --publish=3000:3000 \
@@ -127,12 +124,12 @@ docker run -d \
   drone/drone-runner-aws /config/.env /config/.drone_pool.yml
 ```
 
-## Verification
+# Verification
 
 Use the docker logs command to view the logs and verify the runner successfully established a connection with the Drone server.
 
-```bash
-docker logs runner
+```
+$ docker logs runner
 
 level=info msg="daemon: starting the server" addr=":3000"
 level=info msg="daemon: successfully connected to aws"
@@ -154,7 +151,3 @@ level=debug msg="provision: complete" adhoc=false ami=ami-0840994b9b4c03cb1 id=i
 level=info msg="buildPools: created instance windows 2019 i-08bb839ae0fc19524 18.119.101.233"
 level=info msg="daemon: pool created"
 ```
-
-## AWS pipeline syntax
-
-For information on configuring an AWS pipeline see [AWS pipeline syntax]({{< relref "../../pipeline/aws/overview.md" >}})
