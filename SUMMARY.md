@@ -920,7 +920,7 @@
     * [Starlark](server/extensions/starlark.md)
   - Ha
     * [HA](server/ha/_index.md)
-    * [Developer Setup](server/ha/developer-setup.md)
+    * [Local Development](server/ha/developer-setup.md)
     * [Overview](server/ha/overview.md)
   - Provider
     * [Provider](server/provider/_index.md)
