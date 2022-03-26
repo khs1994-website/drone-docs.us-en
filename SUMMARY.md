@@ -406,6 +406,7 @@
         * [Volumes](pipeline/kubernetes/syntax/volumes/_index.md)
         * [Config Map Volumes](pipeline/kubernetes/syntax/volumes/configmap.md)
         * [Host Volumes](pipeline/kubernetes/syntax/volumes/host.md)
+        * [Persistent Volume Claim](pipeline/kubernetes/syntax/volumes/persistentvolumeclaim.md)
         * [Temporary Volumes](pipeline/kubernetes/syntax/volumes/temporary.md)
       * [Configure](pipeline/kubernetes/syntax/_index.md)
       * [Cloning](pipeline/kubernetes/syntax/cloning.md)
@@ -648,6 +649,9 @@
       - Reference
         * [Reference](runner/exec/configuration/reference/_index.md)
         * [DRONE DEBUG](runner/exec/configuration/reference/drone-debug.md)
+        * [DRONE ENV PLUGIN ENDPOINT](runner/exec/configuration/reference/drone-env-plugin-endpoint.md)
+        * [DRONE ENV PLUGIN SKIP VERIFY](runner/exec/configuration/reference/drone-env-plugin-skip-verify.md)
+        * [DRONE ENV PLUGIN TOKEN](runner/exec/configuration/reference/drone-env-plugin-token.md)
         * [DRONE HTTP BIND](runner/exec/configuration/reference/drone-http-bind.md)
         * [DRONE HTTP HOST](runner/exec/configuration/reference/drone-http-host.md)
         * [DRONE HTTP PROTO](runner/exec/configuration/reference/drone-http-proto.md)
@@ -869,6 +873,9 @@
       - Reference
         * [Reference](runner/ssh/configuration/reference/_index.md)
         * [DRONE DEBUG](runner/ssh/configuration/reference/drone-debug.md)
+        * [DRONE ENV PLUGIN ENDPOINT](runner/ssh/configuration/reference/drone-env-plugin-endpoint.md)
+        * [DRONE ENV PLUGIN SKIP VERIFY](runner/ssh/configuration/reference/drone-env-plugin-skip-verify.md)
+        * [DRONE ENV PLUGIN TOKEN](runner/ssh/configuration/reference/drone-env-plugin-token.md)
         * [DRONE HTTP BIND](runner/ssh/configuration/reference/drone-http-bind.md)
         * [DRONE HTTP HOST](runner/ssh/configuration/reference/drone-http-host.md)
         * [DRONE HTTP PROTO](runner/ssh/configuration/reference/drone-http-proto.md)
