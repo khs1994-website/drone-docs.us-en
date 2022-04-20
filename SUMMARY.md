@@ -590,6 +590,7 @@
         * [DRONE CPU SET](runner/docker/configuration/reference/drone-cpu-set.md)
         * [DRONE CPU SHARES](runner/docker/configuration/reference/drone-cpu-shares.md)
         * [DRONE DEBUG](runner/docker/configuration/reference/drone-debug.md)
+        * [DRONE DEFER TAIL LOG](runner/docker/configuration/reference/drone-defer-tail-log.md)
         * [DRONE DOCKER CONFIG](runner/docker/configuration/reference/drone-docker-config.md)
         * [DRONE DOCKER NETWORK ID](runner/docker/configuration/reference/drone-docker-network-id.md)
         * [DRONE DOCKER STREAM PULL](runner/docker/configuration/reference/drone-docker-stream-pull.md)
