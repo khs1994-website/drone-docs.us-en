@@ -498,6 +498,7 @@
   * [Plugins](plugins/_index.md)
   * [Overview](plugins/overview.md)
   * [Explore](plugins/registry.md)
+  * [Support](plugins/support.md)
 - Promote
   * [Promotions](promote/_index.md)
 - Quickstart
