@@ -541,8 +541,11 @@
         * [DRONE SETTINGS REUSE POOL](runner/aws/configuration/reference/drone-settings-reuse-pool.md)
         * [DRONE TRACE](runner/aws/configuration/reference/drone-trace.md)
       * [Configuration](runner/aws/configuration/_index.md)
+      * [Amazon](runner/aws/configuration/amazon.md)
+      * [Custom Cloud Init](runner/aws/configuration/cloud-init.md)
       * [Logging](runner/aws/configuration/logging.md)
       * [Pool File](runner/aws/configuration/pool.md)
+      * [Setup Command](runner/aws/configuration/setup.md)
   - Digitalocean
     - Configuration
       - Reference
