@@ -913,7 +913,6 @@
         * [Setup Command](runner/vm/providers/amazon/setup.md)
       - Anka
         * [Anka](runner/vm/providers/anka/_index.md)
-        * [Overview](runner/vm/providers/anka/overview.md)
       - Google
         * [Google](runner/vm/providers/google/_index.md)
   * [Runners](runner/_index.md)
