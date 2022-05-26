@@ -909,8 +909,6 @@
     - Providers
       - Amazon
         * [Amazon](runner/vm/providers/amazon/_index.md)
-        * [Overview](runner/vm/providers/amazon/overview.md)
-        * [Setup Command](runner/vm/providers/amazon/setup.md)
       - Anka
         * [Anka](runner/vm/providers/anka/_index.md)
       - Google
