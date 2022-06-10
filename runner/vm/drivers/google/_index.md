@@ -28,9 +28,17 @@ And credentials will be saved in `/home/$(whoami)/.config/gcloud/application_def
 
 Otherwise, [create service account](https://cloud.google.com/iam/docs/creating-managing-service-accounts), [generate credentials file](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) and save it somewhere in the machine where plan to run the vm runner.
 
-# Recommended AMIs
+# Recommended Images
 
-+ [Ubuntu 18.04 LTS (Bionic)](https://console.cloud.google.com/marketplace/product/ubuntu-os-cloud/ubuntu-bionic)
++ [Ubuntu 18.04 LTS (Bionic)](https://console.cloud.google.com/marketplace/product/ubuntu-os-cloud/ubuntu-bionic) 
+
+to find images to use on google compute engine, use the following command:
+
+```bash
+gcloud compute images list
+```
+
+A valid image will look like `projects/{PROJECT}/global/images/{IMAGE}` eg `projects/ubuntu-os-pro-cloud/global/images/ubuntu-pro-1804-bionic-v20220131`.
 
 # Example Pool File
 
@@ -54,3 +62,22 @@ instances:
       zone:
         - europe-west1-b
 {{< / highlight >}}
+
+# Running the VM Runner without a poolfile
+
+You can run the vm runner in Google Compute Engine without a pool file, and it will setup a pool of 2 instance running an Ubuntu 20.04 image.
+
+```bash
+docker run --detach \
+  --env=DRONE_RPC_PROTO=https \
+  --env=DRONE_RPC_HOST=drone.company.com \
+  --env=DRONE_RPC_SECRET=super-duper-secret \
+  --env=DRONE_RUNNER_CAPACITY=2 \
+  --env=DRONE_RUNNER_NAME=my-first-runner \
+  --env=GOOGLE_PROJECT_ID=asdasdasd \
+  --volume=/home/user/.config/gcloud/:/root/.config/gcloud/ \
+  --publish=3000:3000 \
+  --restart=always \
+  --name=runner \
+  drone/drone-runner-aws
+```

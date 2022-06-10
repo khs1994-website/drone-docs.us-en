@@ -906,13 +906,13 @@
         * [DRONE SETTINGS LITE ENGINE PATH](runner/vm/configuration/reference/drone-settings-lite-engine-path.md)
         * [DRONE SETTINGS REUSE POOL](runner/vm/configuration/reference/drone-settings-reuse-pool.md)
         * [DRONE TRACE](runner/vm/configuration/reference/drone-trace.md)
-    - Providers
+    - Drivers
       - Amazon
-        * [Amazon](runner/vm/providers/amazon/_index.md)
+        * [Amazon](runner/vm/drivers/amazon/_index.md)
       - Anka
-        * [Anka](runner/vm/providers/anka/_index.md)
+        * [Anka](runner/vm/drivers/anka/_index.md)
       - Google
-        * [Google](runner/vm/providers/google/_index.md)
+        * [Google](runner/vm/drivers/google/_index.md)
   * [Runners](runner/_index.md)
   * [Overview](runner/overview.md)
 - Secret
