@@ -717,6 +717,7 @@
         * [DRONE SECRET PLUGIN SKIP VERIFY](runner/kubernetes/configuration/reference/drone-secret-plugin-skip-verify.md)
         * [DRONE SECRET PLUGIN TOKEN](runner/kubernetes/configuration/reference/drone-secret-plugin-token.md)
         * [DRONE SERVICE ACCOUNT DEFAULT](runner/kubernetes/configuration/reference/drone-service-account-default.md)
+        * [DRONE TMATE ENABLED](runner/kubernetes/configuration/reference/drone-tmate-enabled.md)
         * [DRONE TRACE](runner/kubernetes/configuration/reference/drone-trace.md)
         * [DRONE UI DISABLED](runner/kubernetes/configuration/reference/drone-ui-disable.md)
         * [DRONE UI PASSWORD](runner/kubernetes/configuration/reference/drone-ui-password.md)
@@ -905,6 +906,7 @@
         * [DRONE SETTINGS AWS KEY PAIR NAME](runner/vm/configuration/reference/drone-settings-aws-key-pair-name.md)
         * [DRONE SETTINGS LITE ENGINE PATH](runner/vm/configuration/reference/drone-settings-lite-engine-path.md)
         * [DRONE SETTINGS REUSE POOL](runner/vm/configuration/reference/drone-settings-reuse-pool.md)
+        * [DRONE TMATE ENABLED](runner/vm/configuration/reference/drone-tmate-enabled.md)
         * [DRONE TRACE](runner/vm/configuration/reference/drone-trace.md)
     - Drivers
       - Amazon
