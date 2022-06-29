@@ -291,6 +291,7 @@
       * [DRONE FAILED STEPS](pipeline/environment/reference/drone-failed-steps.md)
       * [DRONE GIT HTTP URL](pipeline/environment/reference/drone-git-http-url.md)
       * [DRONE GIT SSH URL](pipeline/environment/reference/drone-git-ssh-url.md)
+      * [DRONE PULL REQUEST TITLE](pipeline/environment/reference/drone-pull-request-title.md)
       * [DRONE PULL REQUEST](pipeline/environment/reference/drone-pull-request.md)
       * [DRONE REMOTE URL](pipeline/environment/reference/drone-remote-url.md)
       * [DRONE REPO BRANCH](pipeline/environment/reference/drone-repo-branch.md)
