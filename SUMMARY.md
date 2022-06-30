@@ -497,6 +497,7 @@
     * [Example Bash Plugin](plugins/tutorials/bash.md)
     * [Example Go Plugin](plugins/tutorials/golang.md)
   * [Plugins](plugins/_index.md)
+  * [Plugin Cards](plugins/adaptive_cards.md)
   * [Overview](plugins/overview.md)
   * [Explore](plugins/registry.md)
   * [Support](plugins/support.md)
