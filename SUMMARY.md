@@ -881,6 +881,7 @@
       - Reference
         * [Reference](runner/vm/configuration/reference/_index.md)
         * [DRONE DEBUG](runner/vm/configuration/reference/drone-debug.md)
+        * [DRONE ENABLE AUTO POOL](runner/vm/configuration/reference/drone-enable-auto-pool.md)
         * [DRONE HTTP BIND](runner/vm/configuration/reference/drone-http-bind.md)
         * [DRONE HTTP HOST](runner/vm/configuration/reference/drone-http-host.md)
         * [DRONE HTTP PROTO](runner/vm/configuration/reference/drone-http-proto.md)
