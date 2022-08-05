@@ -916,6 +916,8 @@
         * [Amazon](runner/vm/drivers/amazon/_index.md)
       - Anka
         * [Anka](runner/vm/drivers/anka/_index.md)
+      - Azure
+        * [Azure](runner/vm/drivers/azure/_index.md)
       - Digitalocean
         * [Digital Ocean](runner/vm/drivers/digitalocean/_index.md)
       - Google
