@@ -19,11 +19,11 @@ Azure specific configuration in a pool file.
 
 By default we require client_id, client_secret subscription_id and tenant_id which is needed for create an the instance.
 
-You can create your own client_id and client_secret by going to the Azure portal and creating an application or use an existing one [here](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade). On your application page you can view the client id. Then you can add a new secret.
+You can create an application or use an existing one [here](https://portal.azure.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade). On your application `Overview` page you can view the client id. Then you can add a new secret under `certificates and secrets`.
 
 Find your tenant_id by going to the Azure portal [here](https://portal.azure.com/#view/Microsoft_AAD_IAM/TenantPropertiesBlade).
 
-Find your subsription_id by going to the Azure portal and selecting your subscription. You will then need to add permissions to your application under IAM. You will need to add the Owner role to your application.
+Find your subsription_id by going to the Azure portal and selecting your subscription [here](https://portal.azure.com/#view/Microsoft_Azure_Billing/SubscriptionsBlade). You will then need to add permissions to your application under IAM. You will need to add the Owner role to your application.
 
 # Pool Spec
 
@@ -77,7 +77,9 @@ password  string # password
 
 This is the default image for the runner.
 
-## [Windows Server 2019 with containers](https://az-vm-image.info/?cmd=--all+--publisher+microsoft+--sku+server-2019)
+## [Windows Server 2019 with containers](https://az-vm-image.info/?cmd=--all+--publisher+microsoftwindowsserver+--sku+containers)
+
+You must use virtual machines with container support enabled.
 
 NB: be sure to set the platform to windows
 
@@ -90,6 +92,8 @@ instances:
   platform:
     os: windows
 ```
+
+Azure does not support running custom scripts for windows out of the box (linux has cloudinit). We use extensions to do this, this unfortunately adds to the spin up time.
 
 # Example pool setup
 
