@@ -1089,6 +1089,7 @@
   * [Logging](server/logging.md)
   * [Metrics](server/metrics.md)
   * [Overview](server/overview.md)
+  * [Time Zone](server/timezone.md)
 - Signature
   * [Signatures](signature/_index.md)
 - Template
