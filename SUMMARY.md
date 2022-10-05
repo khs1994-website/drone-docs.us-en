@@ -332,6 +332,7 @@
       * [DRONE SYSTEM VERSION](pipeline/environment/reference/drone-system-version.md)
       * [DRONE TAG](pipeline/environment/reference/drone-tag.md)
       * [DRONE TARGET BRANCH](pipeline/environment/reference/drone-target-branch.md)
+      * [DRONE WORKSPACE](pipeline/environment/reference/drone-workspace.md)
       * [DRONE](pipeline/environment/reference/drone.md)
     * [Environment](pipeline/environment/_index.md)
     * [Substitution](pipeline/environment/substitution.md)
