@@ -273,6 +273,7 @@
       * [DRONE BUILD PARENT](pipeline/environment/reference/drone-build-parent.md)
       * [DRONE BUILD STARTED](pipeline/environment/reference/drone-build-started.md)
       * [DRONE BUILD STATUS](pipeline/environment/reference/drone-build-status.md)
+      * [DRONE BUILD TRIGGER](pipeline/environment/reference/drone-build-trigger.md)
       * [DRONE CALVER](pipeline/environment/reference/drone-calver.md)
       * [DRONE COMMIT AFTER](pipeline/environment/reference/drone-commit-after.md)
       * [DRONE COMMIT AUTHOR AVATAR](pipeline/environment/reference/drone-commit-author-avatar.md)
